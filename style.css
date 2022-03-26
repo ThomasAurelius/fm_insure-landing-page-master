@@ -1,0 +1,612 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+	list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+/* Hide Property */
+[hidden] {
+	display: none;
+}
+
+/* Customer header sizes */
+h1 {
+	font-size: 2rem;
+	margin: 0.67em 0;
+}
+h2 {
+	font-size: 1.5rem;
+}
+h3 {
+	font-size: 1.17rem;
+}
+h4 {
+	font-size: 1rem;
+}
+h5 {
+	font-size: 0.83rem;
+}
+h6 {
+	font-size: 0.67rem;
+}
+
+pre {
+	white-space: pre-wrap;
+}
+
+/* Defaults for images */
+img,
+svg {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	border-style: none;
+}
+
+picture {
+	display: contents;
+}
+source {
+	display: none;
+}
+svg {
+	overflow: hidden;
+}
+
+/* Block Behavior */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+	display: block;
+}
+
+/* End of starting CSS */
+
+/* Global styles */
+
+p {
+	font-family: "Karla";
+}
+
+h1,
+h2,
+h3 {
+	font-family: "DM Serif Display";
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+.hidden {
+	display: none;
+}
+
+.container {
+	width: 80vw;
+	margin: 0 auto;
+}
+
+/* Navigation */
+
+.nav-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-links {
+	display: flex;
+}
+
+.nav-link {
+	padding: 5px;
+}
+
+.nav-link a {
+	color: hsl(256, 26%, 20%);
+}
+
+.plan-btn {
+	border: 2px solid black;
+	padding: 5px;
+}
+.plan-btn a {
+	color: hsl(256, 26%, 20%);
+}
+
+.plan-btn:hover,
+.plan-btn:focus {
+	background-color: hsl(270, 9%, 17%);
+}
+
+.plan-btn:hover a,
+.plan-btn:focus a {
+	color: white;
+}
+
+.btn {
+	border: 2px solid black;
+	padding: 5px;
+	margin-right: 20px;
+}
+
+.nav-btns {
+	display: none;
+}
+
+.mobile-nav {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.primary-navigation {
+		visibility: hidden;
+	}
+
+	.nav-btns {
+		display: inline-flex;
+		position: relative;
+	}
+
+	.nav-btn {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		top: -15px;
+		right: 30px;
+	}
+
+	.nav-btn:hover,
+	.mav-btn:focus {
+		cursor: pointer;
+	}
+
+	.menu-btn {
+		display: block;
+	}
+
+	.close-btn {
+		display: block;
+		position: absolute;
+	}
+
+	.mobile-container {
+		display: none;
+		height: 100vh;
+		background-color: hsl(256, 26%, 20%);
+		background-image: url("./images/bg-pattern-mobile-nav.svg");
+		background-repeat: no-repeat;
+		background-position: 100% 100%;
+	}
+
+	.mobile-nav {
+		display: flex;
+		flex-direction: column;
+		height: 90%;
+		width: 90%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	ul.mobile-nav-links {
+		padding-left: 0;
+	}
+
+	.mobile-nav-links li a {
+		color: white;
+		text-transform: uppercase;
+		font-size: 2rem;
+		font-family: "Karla";
+	}
+
+	.mobile-plan-btn {
+		border: 2px solid white;
+	}
+}
+
+/* Hero */
+
+.hero-container {
+	background-color: hsl(256, 26%, 20%);
+	width: 100vw;
+	height: 65vh;
+	margin-bottom: 150px;
+}
+
+.hero-inner-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	height: 100%;
+	width: 85vw;
+	margin: 0 auto;
+	margin-top: 0px;
+	margin-bottom: 100px;
+}
+
+.hero-space-container {
+	height: 100px;
+	width: 85vw;
+	margin-top: 80px;
+}
+
+.hero-title {
+	color: white;
+	font-size: 2rem;
+	line-height: 2rem;
+}
+
+.hero-text {
+	color: white;
+	font-size: 1rem;
+}
+
+.hero-left {
+	margin: 30px 20px 60px 0;
+	background-image: url("./images/bg-pattern-intro-left-desktop.svg");
+	background-repeat: no-repeat;
+	background-position: 0% -100%;
+	z-index: 99;
+}
+
+.hero-right {
+	background-image: url("./images/bg-pattern-intro-right-desktop.svg");
+	z-index: 99;
+}
+
+.hero-image {
+	width: 35vw;
+	margin-top: 50px;
+	z-index: -1;
+}
+
+.hero-btn {
+	display: inline-flex;
+	color: white;
+	border: 2px solid white;
+	margin-block: 30px;
+	padding-inline: 20px;
+	text-transform: uppercase;
+	font-family: "Karla", sans-serif;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+	background-color: white;
+	color: hsl(256, 26%, 20%);
+}
+
+/* Section 3 */
+
+.section-3-title {
+	font-size: 2rem;
+}
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 60px;
+	margin-bottom: 40px;
+}
+
+.card {
+	max-width: 300px;
+	width: 300px;
+	margin-inline: 15px;
+}
+
+.card img {
+	margin-block: 20px;
+}
+
+.card h2 {
+	margin-bottom: 20px;
+}
+
+/* Section 4 */
+
+.section-4 {
+	background-color: hsl(256, 26%, 20%);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 200px;
+	background-image: url("./images/bg-pattern-how-we-work-desktop.svg");
+	margin-bottom: 40px;
+	background-position: center right;
+	background-repeat: no-repeat;
+}
+
+.section-4 h2 {
+	font-size: 2rem;
+	color: white;
+	width: 40%;
+	margin-left: 60px;
+}
+
+.btn-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 0.8rem;
+}
+
+.work-btn {
+	display: inline-flex;
+	color: white;
+	border: 2px solid white;
+	text-transform: uppercase;
+	padding: 10px;
+	padding-inline: 20px;
+}
+
+.work-btn:hover,
+.work-btn:focus {
+	background-color: white;
+	color: hsl(256, 26%, 20%);
+}
+
+/* Footer */
+
+.footer-header {
+	display: flex;
+	justify-content: space-between;
+	height: 20px;
+	width: 95%;
+	margin-bottom: 20px;
+}
+
+.footer-logo {
+	margin-left: 20px;
+}
+
+.social-media-icons {
+	display: flex;
+	align-items: center;
+}
+
+.social-media-icons img {
+	padding: 10px;
+}
+
+.social-media-icons img:hover,
+.social-media-icons img:focus {
+	transform: scale(1.2);
+}
+
+.footer-list {
+	display: flex;
+	justify-content: space-evenly;
+	font-family: "Karla";
+	margin-right: 150px;
+}
+
+.footer-list ul {
+	padding-left: 20px;
+}
+
+.list-title {
+	padding-bottom: 15px;
+}
+
+.list-title a {
+	color: hsl(273, 4%, 51%);
+}
+
+.list-item {
+	color: hsl(270, 9%, 17%);
+}
+
+.list-title:hover,
+.list-title:focus,
+.list-item:hover,
+.list-item:focus {
+	text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+	.hero-image {
+		width: 35vw;
+	}
+
+	.hero-title {
+		font-size: 2rem;
+	}
+
+	.hero-text {
+		font-size: 0.8rem;
+		line-spacing: 1.4rem;
+	}
+
+	.footer-list {
+		margin-right: 0px;
+	}
+
+	.card {
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.card img {
+		margin: 40px auto 20px;
+	}
+}
+
+@media (max-width: 550px) {
+	.hero-inner-container {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		height: 100%;
+		width: 100vw;
+		margin: 0 auto;
+	}
+
+	.hero-container {
+		width: 100%;
+		height: 100%;
+	}
+
+	.hero-image {
+		width: 100%;
+		max-width: 375px;
+		margin: 0 auto;
+	}
+
+	.hero-right {
+		order: 1;
+		background-image: none;
+		margin: 0 auto;
+	}
+
+	.hero-left {
+		margin: 0 auto;
+		order: 2;
+		background-image: url("./images/bg-pattern-intro-left-mobile.svg");
+		background-position: 0 0%;
+		text-align: center;
+	}
+
+	.hero-title {
+		width: 85%;
+
+		font-size: 2.5rem;
+		margin: 80px auto 40px auto;
+	}
+
+	.hero-text {
+		width: 85%;
+		line-height: 1.5rem;
+		margin: 20px auto;
+	}
+
+	.section-3-title {
+		width: 85%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.card {
+		text-align: center;
+	}
+
+	.card img {
+		margin: 40px auto 20px;
+	}
+
+	.section-4 {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		height: 260px;
+	}
+
+	.section-4 h2 {
+		margin: 15px auto;
+		width: 85%;
+	}
+
+	.work-btn {
+		margin: 20px;
+	}
+
+	.footer-header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0 auto;
+	}
+
+	.footer-list {
+		flex-direction: column;
+		margin: 30px auto;
+		align-items: center;
+		text-align: center;
+		margin-right: 15px;
+	}
+}
