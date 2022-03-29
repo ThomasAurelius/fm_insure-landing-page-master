@@ -157,6 +157,7 @@ h3 {
 a {
 	text-decoration: none;
 	cursor: pointer;
+	font-family: "Karla";
 }
 
 ul li {
@@ -384,7 +385,8 @@ ul li {
 /* Section 3 */
 
 .section-3-title {
-	font-size: 2rem;
+	font-size: 3.4rem;
+	margin-top: 30px;
 }
 
 .cards {
@@ -496,10 +498,12 @@ ul li {
 
 .list-title a {
 	color: hsl(273, 4%, 51%);
+	text-transform: uppercase;
 }
 
 .list-item {
 	color: hsl(270, 9%, 17%);
+	text-transform: uppercase;
 }
 
 .list-title:hover,
