@@ -386,7 +386,7 @@ ul li {
 
 .section-3-title {
 	font-size: 3.4rem;
-	margin-top: 30px;
+	margin-top: 60px;
 }
 
 .cards {
@@ -454,6 +454,13 @@ ul li {
 }
 
 /* Footer */
+
+footer {
+	background-color: hsl(0, 0%, 98%);
+	background-image: url("./images/bg-pattern-footer-mobile.svg");
+	background-repeat: no-repeat;
+	padding-top: 20px;
+}
 
 .footer-header {
 	display: flex;
