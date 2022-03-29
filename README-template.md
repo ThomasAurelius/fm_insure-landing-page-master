@@ -32,8 +32,9 @@ Users should be able to:
 
 ### Links
 
--  Solution URL: (https://thomasaurelius.github.io/fm_insure-landing-page-master/)
--  Live Site URL: (https://github.com/ThomasAurelius/fm_insure-landing-page-master)
+-  Solution URL: (https://github.com/ThomasAurelius/fm_insure-landing-page-master)
+
+-  Live Site URL: (https://thomasaurelius.github.io/fm_insure-landing-page-master/)
 
 ## My process
 
