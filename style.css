@@ -206,11 +206,11 @@ ul li {
 }
 
 .plan-btn {
-	border: 2px solid black;
+	border: 2px solid hsl(273, 4%, 51%);
 	padding: 5px;
 }
 .plan-btn a {
-	color: hsl(256, 26%, 20%);
+	color: hsl(273, 4%, 51%);
 }
 
 .plan-btn:hover,
@@ -507,6 +507,14 @@ ul li {
 .list-item:hover,
 .list-item:focus {
 	text-decoration: underline;
+}
+
+@media (max-width: 1100px) {
+	.hero-title {
+		font-size: 3rem;
+		line-height: 2.5rem;
+		margin-top: 40px;
+	}
 }
 
 @media (max-width: 768px) {
