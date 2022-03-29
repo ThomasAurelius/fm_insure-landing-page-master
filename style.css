@@ -182,14 +182,16 @@ ul li {
 
 .nav-links {
 	display: flex;
+	text-transform: uppercase;
 }
 
 .nav-link {
 	padding: 5px;
+	margin-inline: 15px;
 }
 
 .nav-link a {
-	color: hsl(256, 26%, 20%);
+	color: hsl(273, 4%, 51%);
 }
 
 .plan-btn {
@@ -315,10 +317,17 @@ ul li {
 	margin-top: 80px;
 }
 
+.hero-hr {
+	width: 200px;
+	margin-left: 1px;
+	margin-top: 30px;
+}
+
 .hero-title {
 	color: white;
-	font-size: 2rem;
-	line-height: 2rem;
+	font-size: 4rem;
+	line-height: 3.5rem;
+	margin-top: 80px;
 }
 
 .hero-text {
@@ -330,7 +339,7 @@ ul li {
 	margin: 30px 20px 60px 0;
 	background-image: url("./images/bg-pattern-intro-left-desktop.svg");
 	background-repeat: no-repeat;
-	background-position: 0% -100%;
+	background-position: 0% 400%;
 	z-index: 99;
 }
 
