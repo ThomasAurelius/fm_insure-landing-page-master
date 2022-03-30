@@ -273,7 +273,7 @@ ul li {
 	.mobile-container {
 		display: none;
 		height: 100vh;
-		background-color: hsl(133, 96%, 21%);
+		background-color: hsl(256, 26%, 20%);
 		background-image: url("./images/bg-pattern-mobile-nav.svg");
 		background-repeat: no-repeat;
 		background-position: 100% 100%;
@@ -307,9 +307,9 @@ ul li {
 /* Hero */
 
 .hero-container {
-	background-color: hsl(133, 96%, 21%);
+	background-color: hsl(256, 26%, 20%);
 	width: 100vw;
-	height: 45vh;
+	height: 65vh;
 	margin-bottom: 150px;
 }
 
@@ -382,11 +382,11 @@ ul li {
 	color: hsl(256, 26%, 20%);
 }
 
-/* Section 3  */
+/* Section 3 */
 
 .section-3-title {
 	font-size: 3.4rem;
-	margin-top: 60px;
+	margin-top: 30px;
 }
 
 .cards {
@@ -413,7 +413,7 @@ ul li {
 /* Section 4 */
 
 .section-4 {
-	background-color: hsl(133, 96%, 21%);
+	background-color: hsl(256, 26%, 20%);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -454,13 +454,6 @@ ul li {
 }
 
 /* Footer */
-
-footer {
-	background-color: hsl(0, 0%, 98%);
-	background-image: url("./images/bg-pattern-footer-mobile.svg");
-	background-repeat: no-repeat;
-	padding-top: 20px;
-}
 
 .footer-header {
 	display: flex;
